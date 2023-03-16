@@ -1,16 +1,380 @@
-//main colore
-// $primary: #a0d911;
-// $success: #3f6600;
-// $info:#0A89FF;
 
+$white:    #fff ;
+$gray-100: #f8f9fa ;
+$gray-200: #e9ecef ;
+$dark-green: #5b8c00 ;
+$gray-300:#f5f5f5;
 
-//btn
-// $btn-border-radius: none;
+$gray-400: #ced4da ;
+$gray-500: #adb5bd ;
+$gray-600: #6c757d ;
+$gray-700: #495057 ;
+$gray-800: #343a40 ;
+$gray-900: #212529 ;
+$black:    #000 ;
 
+$greeny:    #a0d911 ;
+$indigo:  #6610f2 ;
+$purple:  #6f42c1 ;
+$pink:    #d63384 ;
+$red:     #da292e ;
+$orange:  #f8765f ;
+$yellow:  #faad14 ;
+$green:   #2fb380 ;
+$teal:    #20c997 ;
+$cyan:    #1890ff ;
 
+$primary:       $greeny ;
+$secondary:     $white ;
+$success:       $green ;
+$info:          $cyan ;
+$warning:       $yellow ;
+$danger:        $red ;
+$light:         $gray-100 ;
+$dark:          $gray-900 ;
 
+$min-contrast-ratio:   1.65 ;
 
+$enable-shadows:              true ;
 
+// Body
+
+$body-color:                $gray-700 ;
+
+$headings-color:              $gray-900 ;
+
+// Fonts
+
+// stylelint-disable-next-line value-keyword-case
+$font-family-sans-serif:      Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" ;
+$font-size-base:              1rem ; // Assumes the browser default, typically `16px`
+$font-size-sm:                $font-size-base * .875 ;
+
+// Components
+
+$box-shadow:                  0 1px 2px rgba($black, .05) ;
+$box-shadow-lg:               0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06) ;
+
+// Tables
+
+$table-cell-padding-y:        1rem ;
+$table-cell-padding-x:        1rem ;
+$table-cell-padding-y-sm:     .5rem ;
+$table-cell-padding-x-sm:     .5rem ;
+
+$table-th-font-weight:        500 ;
+
+// Buttons + Forms
+
+$input-btn-padding-y:         .5rem ;
+$input-btn-padding-x:         1rem ;
+$input-btn-font-size:         $font-size-sm ;
+
+// Buttons
+
+$btn-font-weight:             500 ;
+$btn-box-shadow:              $box-shadow ;
+$btn-focus-box-shadow:        $box-shadow ;
+$btn-active-box-shadow:       $box-shadow ;
+
+// Forms
+
+$form-label-font-weight:                500 ;
+
+$input-box-shadow:                      $box-shadow ;
+
+$input-group-addon-bg:                  $gray-100 ;
+
+$input-line-height:                     1.5 ;
+$input-bg:                              $gray-300 ;
+$input-disabled-bg:                     $gray-400 ;
+$input-group-addon-bg:                  $gray-300 ;
+
+$form-select-disabled-color:            $gray-600 ;
+$form-select-disabled-bg:               $input-disabled-bg;
+$input-border-width:0;
+$input-focus-box-shadow:                rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+$form-select-focus-border-color:       'none';
+$form-select-focus-width:   0;
+$form-select-focus-box-shadow:         $input-focus-box-shadow;
+// Navs
+
+$nav-link-color:                    $body-color ;
+$nav-link-hover-color:              $body-color ;
+
+$nav-tabs-border-radius:            0 ;
+$nav-tabs-link-active-color:        $primary ;
+
+// Navbar
+
+$navbar-padding-y:                  .85rem ;
+
+$navbar-nav-link-padding-x:         .75rem ;
+
+$navbar-dark-color:                 $white ;
+$navbar-dark-hover-color:           $white ;
+$navbar-dark-active-color:          $white ;
+
+$navbar-light-color:                $black ;
+$navbar-light-hover-color:          $black ;
+$navbar-light-active-color:         $black ;
+
+// Dropdowns
+
+$dropdown-font-size:                $font-size-sm ;
+$dropdown-border-color:             $dark-green ;
+$dropdown-divider-bg:               $gray-200 ;
+
+$dropdown-link-hover-color:         $white ;
+$dropdown-link-hover-bg:            $primary ;
+
+$dropdown-item-padding-y:           .5rem ;
+$dropdown-item-padding-x:           1rem ;
+
+// Pagination
+
+$pagination-padding-y:              .5rem ;
+$pagination-padding-x:              1rem ;
+
+$pagination-color:                  $gray-700 ;
+
+$pagination-focus-color:            $pagination-color ;
+
+$pagination-hover-color:            $pagination-color ;
+$pagination-hover-bg:               $gray-100 ;
+
+// Cards
+$card-spacer-x:                     1.5rem ;
+$card-cap-padding-y:                1rem ;
+$card-cap-padding-x:                1.5rem ;
+
+// Toasts
+
+$toast-header-color:                $headings-color ;
+
+// Modals
+
+$modal-content-border-color:        $dark-green ;
+$modal-header-border-width:         0 ;
+
+// List group
+
+$list-group-item-padding-y:         1rem ;
+$list-group-item-padding-x:         1.5rem ;
+
+// Breadcrumbs
+
+$breadcrumb-padding-x:              1rem ;
+
+$breadcrumb-divider:                quote(">") ;
+
+$form-range-track-bg: #f5f5f5;
+$border-radius:"4px";
+//utils extra
+
+:root {
+  color-scheme: light;
+}
+// Navbar
+
+.navbar {
+  font-size: $font-size-sm;
+  font-weight: 500;
+
+  .nav-item {
+    margin-right: .5rem;
+    margin-left: .5rem;
+  }
+
+  .navbar-nav {
+    .nav-link {
+      border-radius: $border-radius;
+    }
+  }
+}
+
+.navbar-dark {
+  .navbar-nav {
+    .nav-link {
+      &:hover {
+        background-color: rgba(255, 255, 255, .1);
+      }
+
+      &.active {
+        background-color: rgba(0, 0, 0, .5);
+      }
+    }
+  }
+}
+
+.navbar-light {
+  .navbar-nav {
+    .nav-link {
+      &:hover {
+        background-color: rgba(0, 0, 0, .03);
+      }
+
+      &.active {
+        background-color: rgba(0, 0, 0, .05);
+      }
+    }
+  }
+}
+
+.navbar-nav {
+  --bs-nav-link-padding-x: .5rem;
+}
+
+// Buttons
+
+.btn-secondary,
+.btn-light,
+.btn-outline-secondary,
+.btn-outline-light {
+  color: $gray-900;
+
+  &:disabled,
+  &.disabled {
+    border: 1px solid shade-color($secondary, 10%);
+  }
+}
+
+.btn-secondary,
+.btn-outline-secondary {
+  border-color: shade-color($secondary, 10%);
+
+  &:hover,
+  &:active {
+    background-color: shade-color($secondary, 10%);
+    border-color: shade-color($secondary, 10%);
+  }
+}
+
+.btn-light,
+.btn-outline-light {
+  border-color: shade-color($light, 10%);
+
+  &:hover,
+  &:active {
+    background-color: shade-color($light, 10%);
+    border-color: shade-color($light, 10%);
+  }
+}
+
+// Tables
+
+.table {
+  font-size: $font-size-sm;
+  box-shadow: $box-shadow-lg;
+}
+
+thead th {
+  font-size: $font-size-sm;
+  text-transform: uppercase;
+}
+
+// Forms
+
+.input-group-text {
+  box-shadow: $box-shadow;
+}
+
+// Navs
+
+.nav-tabs {
+  font-weight: 500;
+
+  .nav-link {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-width: 0 0 1px;
+  }
+
+  .nav-link.active,
+  .nav-item.show .nav-link {
+    box-shadow: inset 0 -2px 0 $primary;
+  }
+}
+
+.nav-pills {
+  font-weight: 500;
+}
+
+.pagination {
+  font-size: $font-size-sm;
+  font-weight: 500;
+
+  .page-link {
+    box-shadow: $box-shadow;
+  }
+}
+
+.breadcrumb {
+  font-size: $font-size-sm;
+  font-weight: 500;
+  border: 1px solid $dark-green;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+
+  &-item {
+    padding: 1rem .5rem 1rem 0;
+  }
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  padding-right: 1rem;
+}
+
+// Indicators
+
+.alert {
+  .btn-close {
+    color: inherit;
+  }
+}
+
+.badge {
+  &.bg-secondary,
+  &.bg-light {
+    color: $gray-900;
+  }
+}
+
+// Containers
+
+.list-group-item,
+.card {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    color: inherit;
+  }
+}
+
+.list-group {
+  box-shadow: $box-shadow-lg;
+}
+
+.card {
+  box-shadow: $box-shadow-lg;
+}
+
+.modal-footer {
+  background-color: $gray-100;
+}
+
+.modal-content {
+  box-shadow: $box-shadow-lg;
+}
 
 
 // Bootstrap
