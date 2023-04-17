@@ -79,24 +79,30 @@ $btn-active-box-shadow:       $box-shadow ;
 
 // Forms
 
-$form-label-font-weight:                500 ;
+// $form-label-font-weight:                500 ;
 
-$input-box-shadow:                      $box-shadow ;
+// $input-box-shadow:                      $box-shadow ;
 
-$input-group-addon-bg:                  $gray-100 ;
+$input-group-addon-bg:                  $primary ;
+$input-group-addon-color: $white;
+$form-file-button-color:$white;
 
-$input-line-height:                     1.5 ;
-$input-bg:                              $gray-300 ;
-$input-disabled-bg:                     $gray-400 ;
-$input-group-addon-bg:                  $gray-300 ;
+// $input-line-height:                     1.5 ;
+// $input-bg:                              $gray-300 ;
+$input-disabled-bg:                     #d0ec88 ;
+// $input-group-addon-bg:                  $gray-300 ;
 
-$form-select-disabled-color:            $gray-600 ;
-$form-select-disabled-bg:               $input-disabled-bg;
-$input-border-width:0;
+// $form-select-disabled-color:            $gray-600 ;
+// $form-select-disabled-bg:               $input-disabled-bg;
+// $input-border-width:2;
+// $input-border-color:                    $primary;
+
 $input-focus-box-shadow:                rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-$form-select-focus-border-color:       'none';
-$form-select-focus-width:   0;
+// $form-select-focus-border-color:       $primary;
+// $form-select-focus-width:   0;
 $form-select-focus-box-shadow:         $input-focus-box-shadow;
+
+
 // Navs
 
 $nav-link-color:                    $body-color ;
