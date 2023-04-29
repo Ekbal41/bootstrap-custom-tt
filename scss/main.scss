@@ -87,19 +87,11 @@ $input-group-addon-bg:                  $primary ;
 $input-group-addon-color: $white;
 $form-file-button-color:$white;
 
-// $input-line-height:                     1.5 ;
-// $input-bg:                              $gray-300 ;
 $input-disabled-bg:                     #d0ec88 ;
-// $input-group-addon-bg:                  $gray-300 ;
 
-// $form-select-disabled-color:            $gray-600 ;
-// $form-select-disabled-bg:               $input-disabled-bg;
-// $input-border-width:2;
-// $input-border-color:                    $primary;
 
 $input-focus-box-shadow:                rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-// $form-select-focus-border-color:       $primary;
-// $form-select-focus-width:   0;
+
 $form-select-focus-box-shadow:         $input-focus-box-shadow;
 
 
@@ -162,6 +154,29 @@ $toast-header-color:                $headings-color ;
 
 $modal-content-border-color:        $dark-green ;
 $modal-header-border-width:         0 ;
+$modal-dialog-margin:               .5rem ;
+$modal-dialog-margin-y-sm-up:       1.75rem ;
+
+.modal-dialog-centered {
+  display: flex;
+  align-items: center;
+  min-height: calc(100% - (#{$modal-dialog-margin} * 2));
+
+  &::before {
+    display: block; 
+    height: calc(100vh - (#{$modal-dialog-margin} * 2));
+    content: "";
+  }
+}
+
+.modal-dialog-centered {
+  min-height: calc(100% - (#{$modal-dialog-margin-y-sm-up} * 2));
+
+  &::before {
+    height: calc(100vh - (#{$modal-dialog-margin-y-sm-up} * 2));
+  }
+
+}
 
 // List group
 
